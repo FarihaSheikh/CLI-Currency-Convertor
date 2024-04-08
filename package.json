@@ -1,6 +1,6 @@
 {
   "name": "fariha-sheikh-cli-currency-convertor",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "A CLI based currency convertor using typescript,Node.js,inquirer and chalk",
   "main": "index.js",
   "type": "module",

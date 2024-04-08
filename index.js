@@ -5,11 +5,11 @@ console.log(chalk.blue.bold("\n \t Welcome to Currency Converter\n"));
 //Define the list of currencies and their exchange rates
 const currency = {
     "USD": 1,
-    "EUR": 0.9,
-    "GBP": 0.75,
-    "CAD": 1.3,
-    "JPY": 113,
-    "AUD": 1.65,
+    "EUR": 0.92,
+    "GBP": 0.79,
+    "CAD": 1.36,
+    "JPY": 151.74,
+    "AUD": 1.52,
     "PKR": 277.70, //Pakistani Rupee(Rupee)
 };
 // Prompt the user to select currencies from and to
@@ -18,13 +18,13 @@ let user_answer = await inquirer.prompt([
         name: "from_currency",
         type: "list",
         message: "Select the currency to convert from:",
-        choices: ["USD", "EURO", "GBP", "CAD", "JPY", "AUD", "PKR"]
+        choices: ["USD", "EUR", "GBP", "CAD", "JPY", "AUD", "PKR"]
     },
     {
         name: "to_currency",
         type: "list",
         message: "Select the currency to convert in to:",
-        choices: ["USD", "EURO", "GBP", "CAD", "JPY", "AUD", "PKR"]
+        choices: ["USD", "EUR", "GBP", "CAD", "JPY", "AUD", "PKR"]
     },
     {
         name: "amount",

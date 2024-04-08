@@ -8,11 +8,11 @@ console.log(chalk.blue.bold("\n \t Welcome to Currency Converter\n"));
 //Define the list of currencies and their exchange rates
 const currency:any = {
     "USD": 1, // Base Currency
-    "EUR": 0.9, //European Currecy(Euro)
-    "GBP": 0.75, //British Pound(Pound)
-    "CAD": 1.3, //Canadian Dollar(Dollar)
-    "JPY": 113, //Japanese Yen(Yen)
-    "AUD": 1.65, //Australian Dollar(Dollar)
+    "EUR": 0.92, //European Currecy(Euro)
+    "GBP": 0.79, //British Pound(Pound)
+    "CAD": 1.36, //Canadian Dollar(Dollar)
+    "JPY": 151.74, //Japanese Yen(Yen)
+    "AUD": 1.52, //Australian Dollar(Dollar)
     "PKR": 277.70, //Pakistani Rupee(Rupee)
 }
 // Prompt the user to select currencies from and to
@@ -21,13 +21,13 @@ let user_answer = await inquirer.prompt([
         name: "from_currency",
         type: "list",
         message: "Select the currency to convert from:",
-        choices: ["USD","EURO","GBP","CAD","JPY","AUD","PKR"]
+        choices: ["USD","EUR","GBP","CAD","JPY","AUD","PKR"]
 },
 {
     name: "to_currency",
     type: "list",
     message: "Select the currency to convert in to:",
-    choices: ["USD","EURO","GBP","CAD","JPY","AUD","PKR"]
+    choices: ["USD","EUR","GBP","CAD","JPY","AUD","PKR"]
 
 },
 {
